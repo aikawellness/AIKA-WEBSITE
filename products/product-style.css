@@ -330,3 +330,33 @@ footer{
     font-weight:600;
 
 }
+@media (max-width: 768px) {
+
+    .page-header{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .page-header a{
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .hero,
+    .product-hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 42px;
+        line-height: 1.2;
+    }
+}

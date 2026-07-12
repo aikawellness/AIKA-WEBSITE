@@ -6,70 +6,107 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Find the Right Herbal Infusion | AIKA Health & Wellness</title>
+<title>Find Your Herbal Infusion | AIKA Health & Wellness</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-@media (max-width:768px){
-
-.navbar{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
-padding:18px;
-}
-
-.hero{
-padding:50px 20px;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-}
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#faf9f5;
+color:#333;
+line-height:1.7;
+}
+
+.navbar{
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+text-decoration:none;
+font-family:'Cormorant Garamond',serif;
+font-size:40px;
+font-weight:700;
+color:#0b6b34;
+}
+
+.back-btn{
+background:#0b6b34;
+color:#fff;
+text-decoration:none;
+padding:14px 28px;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#085126;
+}
+
 .hero{
-background:#f5fbf6;
-padding:90px 8%;
-text-align:center;
+
+width:90%;
+max-width:1300px;
+
+margin:70px auto;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
 }
 
 .hero h1{
+
 font-family:'Cormorant Garamond',serif;
+
 font-size:64px;
+
 color:#0b6b34;
-margin-bottom:20px;
+
 line-height:1.1;
-word-break:normal;
+
+margin-bottom:25px;
+
 }
+
 .hero p{
-max-width:900px;
-margin:auto;
+
 font-size:20px;
-line-height:1.8;
+
 color:#555;
+
 }
 
 .notice{
 
 width:90%;
-max-width:1200px;
-margin:60px auto;
+max-width:1300px;
+
+margin:0 auto 60px;
+
 background:#fff8e8;
-padding:30px;
+
 border-left:6px solid #d4a017;
+
+padding:30px;
+
 border-radius:18px;
 
 }
@@ -77,7 +114,20 @@ border-radius:18px;
 .notice h2{
 
 color:#0b6b34;
+
 margin-bottom:15px;
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
+
+}
+
+.notice p{
+
+font-size:18px;
+
+color:#555;
 
 }
 
@@ -85,9 +135,11 @@ margin-bottom:15px;
 
 width:90%;
 max-width:1300px;
-margin:60px auto;
+
+margin:auto;
 
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
 
 gap:35px;
@@ -96,7 +148,7 @@ gap:35px;
 
 .card{
 
-background:white;
+background:#fff;
 
 padding:35px;
 
@@ -116,13 +168,13 @@ transform:translateY(-8px);
 
 .card h2{
 
-color:#0b6b34;
-
-margin-bottom:18px;
+font-family:'Cormorant Garamond',serif;
 
 font-size:34px;
 
-font-family:'Cormorant Garamond',serif;
+color:#0b6b34;
+
+margin-bottom:18px;
 
 }
 
@@ -134,19 +186,13 @@ color:#0b6b34;
 
 .card ul{
 
-margin-left:22px;
-
-margin-top:15px;
-
-margin-bottom:25px;
+margin:18px 0 25px 22px;
 
 }
 
 .card li{
 
 margin-bottom:10px;
-
-line-height:1.7;
 
 }
 
@@ -156,23 +202,21 @@ display:flex;
 
 gap:15px;
 
-margin-top:30px;
-
 flex-wrap:wrap;
+
+margin-top:30px;
 
 }
 
 .learn{
-
-display:inline-block;
-
-padding:14px 26px;
 
 background:#0b6b34;
 
 color:white;
 
 text-decoration:none;
+
+padding:14px 26px;
 
 border-radius:40px;
 
@@ -182,47 +226,88 @@ font-weight:600;
 
 .whatsapp{
 
-display:inline-block;
-
-padding:14px 26px;
-
 background:#25D366;
 
 color:white;
 
 text-decoration:none;
 
+padding:14px 26px;
+
 border-radius:40px;
 
 font-weight:600;
 
 }
-@media (max-width:768px){
+
+footer{
+
+margin-top:90px;
+
+background:#0b6b34;
+
+color:white;
+
+text-align:center;
+
+padding:50px 20px;
+
+}
+
+footer h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+@media(max-width:900px){
 
 .navbar{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
-padding:18px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:18px 20px;
+    text-align:center;
+}
+
+.logo{
+    font-size:28px;
+}
+
+.back-btn{
+    padding:10px 22px;
+    font-size:15px;
 }
 
 .hero{
-padding:50px 20px;
+    width:92%;
+    grid-template-columns:1fr;
+    gap:25px;
+    text-align:center;
+    margin:40px auto;
 }
 
 .hero h1{
-font-size:46px;
+    font-size:44px;
+    line-height:1.15;
 }
 
 .hero p{
-font-size:18px;
+    font-size:18px;
 }
 
 .grid{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
 }
 
+.buttons{
+    justify-content:center;
+}
 }
 
 </style>
@@ -232,34 +317,34 @@ grid-template-columns:1fr;
 <body>
 
 <header class="navbar">
+    <a href="index.html" class="logo">AIKA Health & Wellness</a>
 
-<a href="index.html" class="logo">
-
-AIKA Health & Wellness
-
-</a>
-
-<a href="index.html" class="back-btn">
-
-← Back to Home
-
-</a>
-
+    <a href="index.html" class="back-btn">
+        ← Back to Home
+    </a>
 </header>
 
 <section class="hero">
 
+<div>
+
 <h1>
 
-Which AIKA Herbal Infusion Is Right For You?
+Find the Right Herbal Infusion for Your Wellness Journey
 
 </h1>
 
+</div>
+
+<div>
+
 <p>
 
-Many people know how they feel but don't know which wellness concern may be related to their symptoms. Explore the common wellness concerns below and discover the AIKA herbal infusion that best matches your wellness goals.
+Many people experience symptoms without knowing which wellness concern they may be related to. Explore the common signs below and discover the AIKA Herbal Infusion that best matches your wellness goals.
 
 </p>
+
+</div>
 
 </section>
 
@@ -273,64 +358,40 @@ Important Information
 
 <p>
 
-The signs and symptoms below are provided for general educational purposes only and are not intended to diagnose any medical condition. Many health conditions share similar symptoms. If your symptoms persist, worsen or concern you, please consult a qualified healthcare professional.
+The information below is provided for general educational purposes only and is not intended to diagnose, treat, cure or prevent any disease. If symptoms persist or you are concerned about your health, please consult a qualified healthcare professional.
 
 </p>
 
 </div>
 
 <section class="grid">
-
-<div class="card">
+    <div class="card">
 
 <h2>🩸 Blood Sugar Wellness</h2>
 
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Frequent thirst</li>
-
 <li>Frequent urination</li>
-
 <li>Feeling hungry more often</li>
-
 <li>Fatigue</li>
-
 <li>Blurred vision</li>
-
 <li>Slow healing of cuts</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Choose balanced meals.</li>
-
 <li>Stay physically active.</li>
-
 <li>Drink enough water.</li>
-
 <li>Maintain a healthy weight.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/anti-diabetic.html" class="learn">
-
-Learn More
-
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-
-Order
-
-</a>
-
+<a href="products/anti-diabetic.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -342,52 +403,30 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Headaches</li>
-
 <li>Dizziness</li>
-
 <li>Blurred vision</li>
-
 <li>Fatigue</li>
-
 <li>Shortness of breath</li>
-
 <li>Chest discomfort (seek urgent medical attention if severe)</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Reduce salt intake.</li>
-
 <li>Exercise regularly.</li>
-
 <li>Manage stress.</li>
-
 <li>Eat plenty of fruits and vegetables.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/blood-pressure.html" class="learn">
-
-Learn More
-
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-
-Order
-
-</a>
-
+<a href="products/blood-pressure.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
+
 <div class="card">
 
 <h2>🌿 Liver Wellness</h2>
@@ -395,36 +434,25 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Persistent tiredness</li>
 <li>Feeling bloated</li>
 <li>Discomfort in the upper right abdomen</li>
 <li>Loss of appetite</li>
 <li>Unexplained weight changes</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Choose a balanced diet.</li>
 <li>Limit sugary foods and drinks.</li>
 <li>Stay physically active.</li>
 <li>Maintain a healthy weight.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/fatty-liver.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/fatty-liver.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -436,36 +464,25 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Irregular menstrual cycles</li>
 <li>Acne</li>
 <li>Excess facial or body hair</li>
 <li>Hair thinning</li>
 <li>Weight gain or difficulty losing weight</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Follow a balanced diet.</li>
 <li>Exercise regularly.</li>
 <li>Manage stress.</li>
 <li>Aim for consistent sleep.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/pcos.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/pcos.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -477,40 +494,28 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Joint discomfort</li>
 <li>Morning stiffness</li>
 <li>Swelling around joints</li>
 <li>Muscle aches</li>
 <li>Reduced flexibility</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Eat plenty of colourful fruits and vegetables.</li>
 <li>Stay physically active.</li>
 <li>Maintain a healthy weight.</li>
 <li>Get adequate sleep.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/inflammation.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/inflammation.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
-
 <div class="card">
 
 <h2>❤️ Cholesterol Wellness</h2>
@@ -518,37 +523,27 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>High cholesterol often has no obvious symptoms.</li>
-<li>It is commonly detected through a blood test.</li>
-<li>Some people may have other cardiovascular risk factors.</li>
-
+<li>Usually detected through a blood test.</li>
+<li>May increase cardiovascular risk over time.</li>
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Eat more fibre-rich foods.</li>
-<li>Reduce saturated and trans fats.</li>
+<li>Reduce saturated fats.</li>
 <li>Exercise regularly.</li>
 <li>Avoid smoking.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/cholesterol.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/cholesterol.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
+
 <div class="card">
 
 <h2>🌱 Acidity Relief</h2>
@@ -556,36 +551,25 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Heartburn</li>
-<li>A burning sensation in the chest</li>
-<li>Bloating after meals</li>
 <li>Acid reflux</li>
+<li>Bloating</li>
 <li>Indigestion</li>
-
+<li>Burning sensation in the chest</li>
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
 <li>Eat smaller meals.</li>
-<li>Avoid lying down immediately after eating.</li>
-<li>Limit spicy and fatty foods if they trigger symptoms.</li>
+<li>Avoid lying down after eating.</li>
 <li>Drink enough water.</li>
-
+<li>Limit spicy and fatty foods.</li>
 </ul>
 
 <div class="buttons">
-
-<a href="products/acidity.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/acidity.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -597,36 +581,25 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Persistent cough</li>
 <li>Shortness of breath</li>
 <li>Chest congestion</li>
 <li>Wheezing</li>
 <li>Difficulty clearing mucus</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
-<li>Avoid smoking and second-hand smoke.</li>
-<li>Stay well hydrated.</li>
+<li>Avoid smoking.</li>
+<li>Stay hydrated.</li>
 <li>Exercise regularly.</li>
-<li>Reduce exposure to dust and pollutants.</li>
-
+<li>Reduce exposure to dust.</li>
 </ul>
 
 <div class="buttons">
-
-<a href="products/lungs-detox.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/lungs-detox.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -638,36 +611,25 @@ Order
 <p><strong>Common signs may include:</strong></p>
 
 <ul>
-
 <li>Bloating</li>
 <li>Gas</li>
 <li>Feeling heavy after meals</li>
 <li>Occasional constipation</li>
 <li>Digestive discomfort</li>
-
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
-<li>Eat slowly and mindfully.</li>
+<li>Eat slowly.</li>
 <li>Drink enough water.</li>
 <li>Include fibre-rich foods.</li>
 <li>Stay physically active.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/ccf.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/ccf.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
@@ -679,50 +641,35 @@ Order
 <p><strong>Blue Tea may be enjoyed by people looking for:</strong></p>
 
 <ul>
-
-<li>A naturally caffeine-free herbal infusion</li>
-<li>A tea naturally rich in plant antioxidants</li>
-<li>A refreshing daily wellness drink</li>
-<li>A beautiful blue herbal infusion</li>
-
+<li>A naturally caffeine-free herbal infusion.</li>
+<li>A tea naturally rich in plant antioxidants.</li>
+<li>A refreshing daily wellness drink.</li>
+<li>A beautiful blue herbal infusion.</li>
 </ul>
 
 <p><strong>Healthy habits:</strong></p>
 
 <ul>
-
-<li>Eat a colourful variety of fruits and vegetables.</li>
+<li>Eat colourful fruits and vegetables.</li>
 <li>Stay hydrated.</li>
 <li>Exercise regularly.</li>
 <li>Get enough sleep.</li>
-
 </ul>
 
 <div class="buttons">
-
-<a href="products/blue-tea.html" class="learn">
-Learn More
-</a>
-
-<a href="https://wa.me/23057820310" class="whatsapp">
-Order
-</a>
-
+<a href="products/blue-tea.html" class="learn">Learn More</a>
+<a href="https://wa.me/23057820310" class="whatsapp">Order</a>
 </div>
 
 </div>
 
 </section>
 
-<footer style="background:#0b6b34;color:white;text-align:center;padding:50px 20px;margin-top:80px;">
+<footer>
 
-<h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;margin-bottom:15px;">
+<h2>AIKA Health & Wellness</h2>
 
-AIKA Health & Wellness
-
-</h2>
-
-<p style="max-width:700px;margin:auto;line-height:1.8;">
+<p>
 
 Premium Loose Leaf Herbal Infusions crafted with carefully selected botanical ingredients to support your everyday wellness journey.
 

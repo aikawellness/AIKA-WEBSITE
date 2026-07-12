@@ -11,7 +11,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+@media (max-width:768px){
 
+.navbar{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:12px;
+padding:18px;
+}
+
+.hero{
+padding:50px 20px;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
 <style>
 
 .hero{
@@ -25,8 +51,9 @@ font-family:'Cormorant Garamond',serif;
 font-size:64px;
 color:#0b6b34;
 margin-bottom:20px;
+line-height:1.1;
+word-break:normal;
 }
-
 .hero p{
 max-width:900px;
 margin:auto;

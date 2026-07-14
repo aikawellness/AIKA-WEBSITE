@@ -52,14 +52,32 @@ body{
 }
 
 .product-image img{
-    width:100%;
-    max-width:500px;
-    display:block;
-    margin:auto;
-    border-radius:25px;
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+width:100%;
+
+max-width:620px;
+
+display:block;
+
+margin:auto;
+
+padding:25px;
+
+background:#ffffff;
+
+border-radius:30px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+transition:.35s;
+
 }
 
+.product-image img:hover{
+
+transform:scale(1.03);
+
+}
 .category{
     color:#b88b00;
     letter-spacing:3px;
@@ -82,34 +100,70 @@ body{
     margin:25px 0;
 }
 
-.product-info p{
-    font-size:18px;
-    color:#555;
-    margin-bottom:30px;
+.product-info{
+
+text-align:left;
+
 }
+
+.product-info p{
+
+font-size:19px;
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:35px;
+
+text-align:justify;
+
+}
+
 .product-info h2{
-    margin-top:35px;
-    margin-bottom:15px;
-    color:#0b6b34;
-    font-size:30px;
-    font-family:'Cormorant Garamond',serif;
+
+margin-top:45px;
+
+margin-bottom:18px;
+
+color:#0b6b34;
+
+font-size:36px;
+
+font-family:'Cormorant Garamond',serif;
+
+border-bottom:2px solid #e8efe9;
+
+padding-bottom:10px;
+
 }
 
 .product-info ul{
-    margin-left:25px;
-    margin-bottom:30px;
+
+margin-left:0;
+
+padding-left:22px;
+
+margin-bottom:35px;
+
 }
 
 .product-info li{
-    margin-bottom:10px;
-    font-size:18px;
-    color:#444;
+
+margin-bottom:14px;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#444;
+
 }
 
 .whatsapp-btn{
     display:inline-block;
     margin-top:20px;
-    padding:18px 38px;
+    padding:20px 55px;
     background:#0b6b34;
     color:#fff;
     text-decoration:none;
@@ -139,16 +193,27 @@ footer{
 }
 
 .product-image::before{
-    content:"";
-    position:absolute;
-    width:420px;
-    height:420px;
-    background:#eef7ef;
-    border-radius:50%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    z-index:-1;
+
+content:"";
+
+position:absolute;
+
+width:520px;
+
+height:520px;
+
+background:linear-gradient(135deg,#eef9f1,#ffffff);
+
+border-radius:50%;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+z-index:-1;
+
 }
 /* ---------- Responsive ---------- */
 
@@ -359,4 +424,49 @@ footer{
         font-size: 42px;
         line-height: 1.2;
     }
+}
+/* =====================================
+   HOSPITALITY ICONS
+===================================== */
+
+.hospitality-icons{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+
+gap:18px;
+
+margin:30px 0;
+
+}
+
+.hospitality-item{
+
+background:#faf7ef;
+
+border-radius:18px;
+
+padding:25px 15px;
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:600;
+
+line-height:1.8;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.hospitality-item:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+
 }

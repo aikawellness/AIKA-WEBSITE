@@ -213,7 +213,7 @@ body{
 
 .about{
 
-    padding:110px 8%;
+    padding:60px 8%;
 
     background:white;
 
@@ -251,11 +251,11 @@ body{
 
     color:#B8860B;
 
-    letter-spacing:3px;
+    letter-spacing:5px;
 
-    font-size:14px;
+    font-size:22px;
 
-    font-weight:600;
+    font-weight:700;
 
     text-transform:uppercase;
 
